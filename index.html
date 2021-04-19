@@ -72,22 +72,51 @@
           </button>
         </div>
         <div data-modal class="backdrop is-hidden">
-          <div class="modal">
-            <form>
-              <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-              <label>
-                Имя
-                <input class="input username" type="text" name="username">
-                <svg aria-label="Имя" width="12px" height="12x">
-                 <use href="./images/icon.svg#modal-name"></use>
-                </svg>
-              </label>
-            </form>
-            <button data-modal-close="" type="button" value="закрыть окно" class="modal-close">
-              <svg aria-label="закрыть окно" width="18px" height="18x">
-                <use href="./images/icon.svg#modal-close"></use>
+          <div class="modal">     
+            <button data-modal-close="" type="button" value="закрыть окно" class="modal-button">
+              <svg aria-label="закрыть окно" width="18px" height="18x" class="icon-modal">
+                <use href="./images/icon.svg#close"></use>
               </svg>
             </button>
+            <h2 class="model-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="form" autocomplete="off">
+              <label class="form-label">
+                  <span>Имя</span> 
+                  <input class="form-field-model" type="text" name="user-name">
+                  <svg class="icon-label">
+                      <use href="./images/icon.svg#name"></use>
+                  </svg>
+              </label>
+              <label class="form-label">
+                  <span>Телефон</span>
+                  <input class="form-field-model" type="text" name="user-phone">
+                  <svg class="icon-label">
+                      <use href="./images/icon.svg#phone"></use>
+                  </svg>
+              </label>
+              <label class="form-label">
+                  <span>Почта</span>
+                  <input class="form-field-model" type="email" name="user-mail" pattern="[A-Za-z]^[ 0-9]+$" required="">
+                  <svg class="icon-label">
+                      <use href="./images/icon.svg#mail"></use>
+                  </svg>
+              </label>
+              <label class="form-label">
+                  <span>Комментарий</span>
+                  <textarea class="form-field-model form-text" name="user-coment" rows="7" placeholder="Введите текст" required=""></textarea>
+              </label>
+              <label class="form-label-check">
+                  <input class="form-field-check" type="checkbox" name="user-agree" value="agree" required="">
+                  <span class="icon-check"></span>
+                  <span class="agree-text">
+                      Соглашаюсь с рассылкой и принимаю
+                      <a href="#" class="">Условия договора</a>
+                  </span>
+              </label>
+                <button class="button-modal" type="submit" disabled="">
+                    Отправить
+                </button>
+            </form>
           </div>
         </div>
       </section>
