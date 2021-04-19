@@ -48,3 +48,18 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.modal-title {
+  padding-top: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.input {
+  display: flex;
+}
